@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy - TikTok Auto Uploader</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 1.6em; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: <span id="date"></span></p>
+
+<p>This Privacy Policy explains what data TikTok Auto Uploader ("the App") accesses and how it is used.</p>
+
+<h2>1. Data Accessed</h2>
+<p>The App uses TikTok's Content Posting API with the <code>video.publish</code> scope to upload video files on behalf of the authenticated account holder to their own TikTok account. The App may also access basic profile information (<code>user.info.basic</code>) solely to confirm which account is authenticated.</p>
+
+<h2>2. Data Storage</h2>
+<p>The App stores, locally on the account holder's own device/server:</p>
+<ul>
+  <li>The OAuth access token and refresh token needed to make authorized API calls</li>
+  <li>A local record of which video files have been uploaded, to avoid duplicate uploads</li>
+</ul>
+<p>No video content, tokens, or personal data are transmitted to or stored by any third party. Video files are sent directly from the account holder's device to TikTok's API.</p>
+
+<h2>3. Data Sharing</h2>
+<p>The App does not share any data with third parties. Data is exchanged only directly between the account holder's device and TikTok's official API endpoints.</p>
+
+<h2>4. Data Retention & Deletion</h2>
+<p>Access and refresh tokens are stored until the account holder revokes access (via TikTok's "Manage app permissions" page) or deletes the local database file. The account holder may delete all locally stored data at any time by removing the local database file.</p>
+
+<h2>5. Your Rights</h2>
+<p>The account holder may revoke the App's access to their TikTok account at any time from TikTok's account settings under "Manage apps and devices."</p>
+
+<h2>6. Contact</h2>
+<p>For questions about this Privacy Policy, contact: <strong>your-email@example.com</strong></p>
+
+<script>document.getElementById('date').textContent = new Date().toISOString().slice(0,10);</script>
+</body>
+</html>
